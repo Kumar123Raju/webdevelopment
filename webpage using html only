@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+    <head>
+           <title>The NITian</title>
+    </head>
+    <body>
+       <!-- Start header -->
+        <table id="header" border="1" width="100%" cellpadding="0" cellspacing="0" bgcolor="#f77605" >
+            <tr>
+                <td>
+                    <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+                        <tr>
+                            <td>
+                                <font face="arial" size="5" color="#000000" >
+                                <b>Raju kumar</b>
+                              </font>
+                           </td>
+                           <td>
+                            &nbsp;
+                           </td>
+                               <td>
+                                  <a href=" ">
+                                    <font face="arial" size="4" color="#ffffff">Home</font>
+                                  </a>
+                               </td>
+                               <td>
+                                <a href=" ">
+                                  <font face="arial" size="4" color="#ffffff">About</font>
+                                </a>
+                             </td>
+
+                             <td >
+                                <a href=" " >
+                                  <font face="arial" size="4" color="#ffffff" >Service</font>
+                                </a>
+                             </td>
+
+                             <td>
+                                <a href=" ">
+                                  <font face="arial" size="4" color="#ffffff">Testimonial</font>
+                                </a>
+                             </td>
+                             
+                             <td>
+                                <a href=" ">
+                                  <font face="arial" size="4" color="#ffffff">Achievment</font>
+                                </a>
+                             </td>
+
+                             <td>
+                                <a href=" ">
+                                  <font face="arial" size="4" color="#ffffff">Contact</font>
+                                </a>
+                             </td>
+                        
+                        </tr>
+                        
+
+                    </table>
+
+                </td>
+                
+            </tr>
+
+        </table>
+
+
+       <!-- End header -->
+       <!-- Home -->
+       <table id="Home" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#1a1515" >
+        <tr>
+            <td>
+                <table border="0" width="85%" cellpadding="25" cellspacing="0" align="center">
+                    <tr>
+                       
+                      
+
+                           <td align="center" valign="midle">
+                            <h2>
+                              
+                                <font face="arial" size="6" color="#ffffff">
+                                    Hi' I am Raju
+                                </font>
+                            </h2>
+                             
+                          
+                           <h1 >
+                            
+                              <font face="arial" size="4" color="#ffffff">
+                                <h1>Software developer and Youtuber</h1>
+                            </font>
+                            
+                         </h1>
+                        </td>
+
+                    
+                    </tr>
+                    
+
+                </table>
+
+            </td>
+            
+        </tr>
+
+    </table>
+      
+       <!-- End Home -->
+       <!-- About-->
+       <table id="Home" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#1a1515" >
+        <tr>
+            <td>
+                <table border="0" width="85%" cellpadding="25" cellspacing="0" align="center">
+                             <!-- Heading -->
+                    <tr >
+                           <td align="center" valign="midle" colspan="2">
+                            <h2>
+                               
+                                <font face="arial" size="6" color="#ffffff">
+                                  About
+                                </font>
+                            
+                            </h2>
+                            <hr width="80">
+                              
+                           </td>
+                    </tr>
+                            <!-- End Heading -->
+                  
+                    <tr>
+                        <td width="40%">
+                            <img src="image.jpeg" width="70%">
+                        </td>
+                        <td >
+                            
+                            <font size="5" color="#ffffff">
+                                <h1>I am passinate programer</h1>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed nulla asperiores ab quibusdam illo.
+                             Doloribus quas, necessitatibus ex voluptas totam quos magnam molestiae architecto neque fuga accusantium 
+                             laboriosam doloremque labore!
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt perferendis officia amet minima facere? 
+                            Laudantium temporibus doloremque neque maiores quis nobis explicabo placeat incidunt, repellat, dolorem cum.
+                             Dignissimos, delectus minima!
+                        </font>
+
+                        </td>
+                        
+                    </tr>
+
+                </table>
+
+            </td>
+            
+        </tr>
+
+    </table>
+
+       <!-- End About -->
+       <!-- Serviec -->
+       <table id="Service" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#E1DDDD" >
+        <tr>
+            <td>
+                <table border="0" width="100%" cellpadding="40" cellspacing="0" align="center">
+                             <!-- Heading -->
+                    <tr >
+                           <td width="100%" align="center" valign="midle" colspan="3">
+                            <h2 align="center">
+                               
+                                <font face="arial" size="6"  >
+                                  service
+                                </font>
+                            
+                            </h2>
+                            <hr width="100  ">
+                              
+                           </td>
+                    </tr>
+                            <!-- End Heading -->
+                     <tr>
+                        <td width="33%" align="center">
+                            <img src="image/service1.jpg" width="90%">
+                             
+                        </td>
+                        <td width="33%" align="center">
+                            <img src="image/service 2.jpg" width="90%">
+                             
+                        </td>
+                        <td width="33%" align="center">
+                            <img src="image/service3.jpg" width="90%">
+                             
+                        </td>
+
+                    </tr>
+                  
+                    
+
+                </table>
+
+            </td>
+            
+        </tr>
+
+    </table>
+       <!-- End Service -->
+       <!-- tesimonial -->
+       <table id="Service" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#1a1515" >
+        <tr>
+            <td>
+                <table border="0" width="100%" cellpadding="40" cellspacing="0" align="center">
+                             <!-- Heading -->
+                    <tr >
+                           <td width="100%" align="center" valign="midle" colspan="3">
+                            <h2 align="center">
+                               
+                                <font face="arial" size="6" color="#F9AE19" >
+                                  Testimonial
+                                 
+                                </font>
+                            
+                            </h2>
+                            <hr width="100  " color="#F9AE19" >
+                            
+                              
+                           </td>
+                    </tr>
+                            <!-- End Heading -->
+                     <tr>
+                        <td width="33%" align="center">
+                            <font face="arial" size="4" color="#ffffff">
+                                <h3>Manoj gupta</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure neque facere nobis
+                                     corrupti officia, incidunt expedita? Culpa corrupti eligendi quibusdam.</p>
+                            </font>
+                             
+                        </td>
+                        <td width="33%" align="center">
+                            <font face="arial" size="4" color="#ffffff">
+                                <h3>Sourabh sir</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure neque facere nobis
+                                     corrupti officia, incidunt expedita? Culpa corrupti eligendi quibusdam.</p>
+                            </font>
+                             
+                        </td>
+                        <td width="33%" align="center">
+                            <font face="arial" size="4" color="#ffffff">
+                                <h3>Pratik sir</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure neque facere nobis
+                                     corrupti officia, incidunt expedita? Culpa corrupti eligendi quibusdam.</p>
+                            </font>
+                             
+                        </td>
+
+                    </tr>
+                  
+                    
+
+                </table>
+
+            </td>
+            
+        </tr>
+
+    </table>
+       <!-- End testimonial -->
+       <!-- Achievment -->
+       <table id="Service" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#E1DDDD" >
+        <tr>
+            <td>
+                <table border="0" width="100%" cellpadding="40" cellspacing="0" align="center">
+                             <!-- Heading -->
+                    <tr >
+                           <td width="100%" align="center" valign="midle" colspan="3">
+                            <h2 align="center">
+                               
+                                <font face="arial" size="6" >
+                                  Achievment
+                                 
+                                </font>
+                            
+                            </h2>
+                            <hr width="100  " >
+                            
+                              
+                           </td>
+                    </tr>
+                            <!-- End Heading -->
+                    <tr>
+                        <td width="5%">
+                            &nbsp;
+                        </td>
+                        
+                        <td  width="30%" >
+
+                           <ul>
+                               <font face="arial" size="4">
+                               <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, excepturi.</li>
+                               <li>Quod rem adipisci vero iste repellat eveniet obcaecati necessitatibus illum.</li>
+                               <li>A deleniti sit nihil velit reprehenderit ullam voluptate earum facere?</li>
+                               <li>Harum quos ullam at nostrum dolorem recusandae est dignissimos quaerat.</li>
+                               <li>Velit, eveniet nisi aspernatur recusandae dolor rem nihil modi? Aut!</li>
+                               <li>Rerum optio illum repellat inventore, odio nam nihil repudiandae dicta!</li>
+                               <li>Doloremque perferendis eum mollitia eius aliquid totam eligendi omnis architecto.</li>
+                               <li>Odit voluptas dolor tempora illum ullam! Praesentium atque hic eligendi?</li>
+                               <li>Neque, sequi assumenda quidem omnis molestias deleniti in quae delectus?</li>
+                               <li>Nesciunt, illo! Eligendi alias sapiente excepturi dolores tenetur repellat. Labore.</li>
+                            </font>
+                           </ul>
+                        </td>
+                        
+                        <td width="33%" >
+                            <img src="image/achivement.jpg" width="50%">
+                             
+                        </td>
+                        
+                    </tr>
+                    
+                  
+                    
+
+                </table>
+
+            </td>
+            
+        </tr>
+
+    </table>
+       <!-- End Achievment -->
+       <!-- Contact -->
+       <table id="Service" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#1a1515" >
+        <tr>
+            <td>
+                <table border="0" width="100%" cellpadding="40" cellspacing="0" align="center">
+                             <!-- Heading -->
+                    <tr >
+                           <td width="100%" align="center" valign="midle" colspan="3">
+                            <h2 align="center">
+                               
+                                <font face="arial" size="6" color="#F9AE19" >
+                                  contact
+                                 
+                                </font>
+                            
+                            </h2>
+                            <hr width="100  " color="#F9AE19" >
+                            
+                              
+                           </td>
+                    </tr>
+                            <!-- End Heading -->
+                     <tr>
+                          <td align="center" valign="top">
+                               <table border="0" width="50%" cellpading="1" cellspacing="50" align="center" bgcolor="#60615F">
+                                       <tr align="center">
+                                             <td width="40%">
+                                                <font face="arial" size="4" color="#ffffff" >
+                                                    Name
+                                                </font>
+                                             </td>
+                                             <td width="70%" >
+                                                <font face="arial" size="4" color="#ffffff">
+                                                    <input type="text" size="40">
+                                                </font>
+                                             </td>
+                                       </tr>
+
+                                       <tr align="center">
+                                        <td width="40%">
+                                           <font face="arial" size="4" color="#ffffff" >
+                                               Email
+                                           </font>
+                                        </td>
+                                        <td width="70%" >
+                                           <font face="arial" size="4" color="#ffffff">
+                                               <input type="email" size="40">
+                                           </font>
+                                        </td>
+                                  </tr>
+
+                                  <tr align="center">
+                                    <td width="40%">
+                                       <font face="arial" size="4" color="#ffffff" >
+                                           Message
+                                       </font>
+                                    </td>
+                                    <td width="70%" >
+                                       <font face="arial" size="4" color="#ffffff">
+                                          <textarea rows="5" cols="40"></textarea>
+                                       </font>
+                                    </td>
+                              </tr>
+                              <tr >
+                                <td width="30%">
+                                    &nbsp;
+                                </td>
+                                <td width="70" >
+                                   <button type="button">
+                                             <font face="arial" size="5" >
+                                                Submit
+                                             </font>
+                                   </button>
+                                </td>
+                          </tr>
+
+                               </table>
+
+                          </td>
+
+                    </tr>
+                    
+                </table>
+
+            </td>
+            
+        </tr>
+
+    </table>
+      
+       <!-- End contact -->
+       <!-- footer -->
+       <table id="Service" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#434342" >
+        <tr>
+            <td>
+                <table border="0" width="80%" cellpadding="15" cellspacing="0" align="center">
+                             <!-- Heading -->
+                    <tr align="center " >
+                        <td width="25%" valign="top" >
+                            <font face="arial" size="5" color="#F6A80B">
+                                <b>facebook</b>
+
+                            </font>
+                        </td>
+                        <td width="25%" valing="top" >
+                            <font face="arial" size="5" color="#F6A80B">
+                                <b>instagram</b>
+
+                            </font>
+                        </td>
+                        <td width="25%" valign="top">
+                            <font face="arial" size="5" color="#F6A80B">
+                                <b>twitter</b>
+
+                            </font>
+                        </td>
+                        <td width="25%" valign="top">
+                            <font face="arial" size="5" color="#F6A80B">
+                                <b>linkdin</b>
+
+                            </font>
+                        </td>
+
+                    </tr>
+                    <tr align="center " >
+                        <td width="25%" valign="top" >
+                            <font face="arial" size="5" color="#F6A80B">
+                                <b>youtube</b>
+
+                            </font>
+                        </td>
+                        <td width="25%" valing="top" >
+                            <font face="arial" size="5" color="#F6A80B">
+                                <b>Blog</b>
+
+                            </font>
+                        </td>
+                        <td width="25%" valign="top">
+                            <font face="arial" size="5" color="#F6A80B">
+                                <b>Email</b>
+
+                            </font>
+                        </td>
+                        <td width="25%" valign="top">
+                            <font face="arial" size="5" color="#F6A80B">
+                                <b>website</b>
+
+                            </font>
+                        </td>
+
+                    </tr>
+                  
+                    
+
+                </table>
+
+            </td>
+            
+        </tr>
+
+    </table>
+       <!-- End footer -->
+    
+
+
+
+    </body>
+</html>
