@@ -13,4 +13,50 @@ understand jsx:
    example:
    1.mixing HTML and JavaScript;
    2.Embedding javascript expressions;
-   etc;
+   etc.
+   
+3.Adding Bootstrap to react:
+   3.1   first: starter template me javascript aur css ko copy paste karo
+          index.html me:
+   3.2   second use: navbar,form etc as per your choice and take care of some
+         points like: convert class to className,href="#" to href="/" etc
+         by clicking (ctr+f)
+4.understanding props and propTypes  in react:-----------------------------
+1.module:
+2.props:
+      (1.sabse pahle ek folder banayenge component
+      2.uske andar Navbar.js naam ka ek file banayenge
+      3.rfc type karke enter karenge ya import React from 'react'
+      3.uske andar jovi html file likhenge wo display hoga
+      )
+       props pass karennge ( export default function navbar(pops) ) yahan pe
+           aur uske andar hum ex:
+            <a className="navbar-brand" href="/>{props.title}</a> 
+            aur iske baad---------
+            App.js ke andar :
+                             function App(){
+                                  return(
+                                  <>
+                                   <navbar title="textUtils2"/> 
+                                   //yahan se title jayega jiskp props.title se access kar payenge aur jahan v isko print karna hai wahan {props.title} ke naam se use kar skte hai simple:
+                                   
+                                   
+        summary: ek baar navbar bana do aur  usko har jagah use kar skte hai
+                 usko alag alag part ko v as a component chagne kar skte hai
+                 like....aboout ko change karke about us kar skte hai etc.
+                 
+    2.2 set props ka propTypes:--------------------------------------
+       ex:(for more detail go to react official page)
+             Navbar.porpTypes={
+                 title:propTypes.string,
+                 aboutText: propTypes.string.isRequired
+                 }
+                 
+                 or for default if no any title send then the are used;
+             navbar.default.Props={ 
+                title: 'set title here',
+                abooutText : 'about'
+                };
+                 //agar string ke jagah number send kr diya to error aayega
+                 //future me error se bachne ke liye aisa karte hai.
+ 
