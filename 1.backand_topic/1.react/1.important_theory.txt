@@ -1,0 +1,16 @@
+1.install visual studio
+2.install node js
+2.In terminal
+      2.1  npx create-next-app (create new react project)
+      2.2
+      
+understand jsx:
+   JSX (JavaScript XML) is a syntax extension used in React, a popular JavaScript 
+   library for building user interfaces. It allows you to write HTML-like code
+   directly in your JavaScript files. JSX combines the power of JavaScript with
+   the simplicity and expressiveness of HTML, making it easier to create dynamic
+   and interactive web applications.
+   example:
+   1.mixing HTML and JavaScript;
+   2.Embedding javascript expressions;
+   etc;
