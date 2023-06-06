@@ -1,0 +1,16 @@
+//to runn nodemon
+method 1:
+        install:   npm install -g nodemon
+        run    :   nodemon run index.js  (it will run automatically)
+        
+method 2:
+         1.in terminal: npm init
+         2.press ok for default setting;
+         3.open package.json file and search "Script"
+         4."scripts": {
+                      "start": "node your-app.js"
+                      }
+                or
+                "start":"nodemon index.js"
+                
+
