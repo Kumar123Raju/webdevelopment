@@ -1,0 +1,45 @@
+1)  .env(iske andar wo sab mention karte hai jisko hum dusre file me use krne wale hai)(usko-> require("dotenv").config()   se import kar skte hai(also npm i dotenv)
+     (usko process.env.____ se use kar skte hai)
+-----------------------------------------------------------------------------------
+PORT=3000
+DATABASE_URL=mongodb://127.0.0.1:27017/Rjdatabase
+
+
+--------------------------------------------------------------------------------
+2)  file name: models   (isme hum database ka model kaisa hoga wo design karenge. mtlb schema design karenge)-------------------start----------------
+------------------
+steps 1: mongoose ko require karo( const mongoose=require("mongoose")   )
+stemp 2: const dbschema=new mongoose.Schema({})  se Schema ready karo
+step 3: export krdo (   module.exports=mongoose.model("dbstruct",dbschema);   //learn it
+code:
+const mongoose=require("mongoose");
+
+const dbSchema=new mongoose.Schema({
+
+        Name:{
+                type:String,
+                require:true,
+                maxLenth:50,
+        },
+        Roll:{
+                type:String,
+                require:true,
+                maxLenth:50,
+        },
+        college:{
+                type:String,
+                default:"NIT JAMSHEDPUR",
+                maxLenth:50,
+        }
+
+
+});
+
+module.exports=mongoose.model("dbstruct",dbSchema);  //export ho gaya
+
+
+-----------------------------------------------------------------------------------------------------------------------------END-----------------
+
+
+
+
