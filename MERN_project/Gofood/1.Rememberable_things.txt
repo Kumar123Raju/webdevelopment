@@ -1,0 +1,26 @@
+------------------------------------------------------Sortcuts key-------------------------------------------------------------------------------------
+rfc ->when we declare components
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+1st lecture:
+           1.explain about MERN
+           2.give insturction to install important extension
+           
+2nd lecture:
+            1.npx create-react-app Name   (install it)
+                     cd my-app
+                     npm start
+            2.App.js (explore it by yourself)
+            3.create components (iske ander wo components define karte hai jiska use baar baar ata hai ek baar bana ke usko baar baar use karenge ex: Navbar.js,etc)
+              create screen (isme hum wo  banate hai jo screen me hamesa dhikta hai) usko ek baar kardo hamesa dhikenga jaise ke navbar aur footer hamesa dhikta hai
+                            us case me navbar aur footer ko sceen ke andar daal denge..
+                            
+            3.bootstrap:
+                        1.npm i bootstrap
+                        2.npm i bootstrap-react
+                        3.copy bootstrap dark 5   link and paste into main page(index.html)
+                        4.copy bootstrap of navbar ,header,etc and paste into it
+   
+ 3rd lecture:
+                        1.React Router DOM
