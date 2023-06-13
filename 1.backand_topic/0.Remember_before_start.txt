@@ -125,6 +125,115 @@ exports.getTodo=async(req,res)=>{
 
 ---------------------------------------------------------------------------------------------------------------------------------End-------------
 
+4.config (connecction established with database)----------------------------------------------------------------------------start-----------------
+---------
+step 1:import mongoose (kyuki database se connection karna hai) require("mongoose");
+step 2; import .env  (kyuki yahan hum mongodb ka url use karenge jo .env me store hai)
+step 3: define a call back function  const dbconnection()=>{}   (kyuki hum chahte hai jab v function call ho database connection ho jaye
+step 4: write the connection code inside the call back function 
+        mongoose.connect(url,{  
+        }).then(()=>{})
+          .catch( (err)=>{} )
+          
+          
+code:
+const mongoose=require("mongoose");
+
+require("dotenv").config();
+
+
+// connection database
+const dbconnection=()=>{
+        mongoose.connect(process.env.DATABASE_URL,{
+                useNewUrlParser:true,
+                useUnifiedTopology:true,
+        })
+        .then(()=>console.log("connection establised"))
+        .catch((err)=>{
+                console.log("connection not successfull established");
+                console.log(err.message);
+                process.exit(1);
+        })
+}
+
+
+----------------------------------------------------------------------------------------------------------------------------End-------------------
+
+5.Route (ab route set karenge aur har ek route pe specific task hoga jisko controller se mount karenge)---------------------start------------------
+-------
+step 1: import express (  const express=require("express") ) kyuki Router ka use karne wale hai jo express ka ek entity hai
+step 2: import Router (const router=express.Router() ) express.Router() function ek naya router object create karta hai, jiske dwara hum server ke
+                                                        alag-alag routes aur unke related handlers(controllers) ko define kar sakte hain.
+                                                        
+step 3: import controller (const {name}=require("../controllers/retrivedata");)  kyuki controller ko mount karenge  har ek route se 
+step 4: Define API according to post and get( jovi set kiya huwa hoga uske according kareng ke post request hai ya get request)
+step 5: router.get("/getdata",retrivedata)       (/ iska mtlb base or home page , "/getdata" iska mtlb getdata url pe getdata dega)
+step 6: export the router  (module.exports=router) taaki router ko use kiya ja sake import karke jo mount kiya huwa hai)
+
+code:
+     // import express and Router
+const express=require("express");
+const router=express.Router();
+
+// import controllers
+const {retriveData}=require("../controllers/retrivedata");
+
+// define API
+router.post("/getdata",retriveData);
+
+module.exports=router;
+          
+
+---------------------------------------------------------------------------------------------------------------------------ENd--------------------
+
+6.index.js(final) ---------------------------------------------------------------------------------------------------------Start-------------------
+----------------
+step 1: import express and express()   ( because server banega aur midlware)
+step 2: import dotenv (taaki .env ka sare data ko use kar pauu)
+step 3:  declare midleware to parser the json ( app.use(express.json()) ;     taaki body parse ho jaye aur use kar ske
+step 4: import the route for API     (mtlb  jo router me define kiye hai usko import kareng taaki use kar paye yahan) 
+         const todoRoutes=require("./routes/todos");
+step 5: mount the Api (basically ye islye karte hai kyuki base route ko set kr dete hai aur uske baad base route se jahan jana hai wo router batayega
+        jo mene router ke ander define kiya huwa hai
+        app.use("/api/v1/",todoRoutes);   //isko midle ware me karegne taki server start hone time he mount ho jaye
+step 6: listen server (server ko listen karwayeng)
+step 7: call database connection( pahle config ko require karenge aur phr dbconnection()  ko call karenge )
+step 8: define default home page:
+
+code: const express=require("express");
+const app=express();
+
+// load config from env file
+require("dotenv").config();
+const PORT=process.env.PORT || 4000;
+
+// middle ware to parse json request  body
+app.use(express.json());
+
+// import routes for  TODO API
+const todoRoutes=require("./routes/todos");
+
+// mount the todo ASPI routes
+app.use("/api/v1/",todoRoutes);
+
+
+// start server
+app.listen(PORT,()=>{
+        console.log(`server started at ${PORT}`);
+})
+
+// connection to the database
+const dbConnect=require("./config/database");
+dbConnect();
+
+// default home page
+app.get("/",(req,res)=>{
+        res.send(`<h1>This is homepage body</h1>`);
+})
+
+
+-----------------------------------------------------------------------------------------------------------------------------End-------------------
+
 
 
 
