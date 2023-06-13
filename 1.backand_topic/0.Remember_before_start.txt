@@ -6,6 +6,7 @@ DATABASE_URL=mongodb://127.0.0.1:27017/Rjdatabase
 
 
 --------------------------------------------------------------------------------
+
 2)  file name: models   (isme hum database ka model kaisa hoga wo design karenge. mtlb schema design karenge)-------------------start----------------
 ------------------
 steps 1: mongoose ko require karo( const mongoose=require("mongoose")   )
@@ -39,6 +40,90 @@ module.exports=mongoose.model("dbstruct",dbSchema);  //export ho gaya
 
 
 -----------------------------------------------------------------------------------------------------------------------------END-----------------
+3.controller  (isme logic hoga ke agar koi route ayega to kya hoga......isko rounte se mount karenge: )-----------------------start-------------
+-------------
+step 1 : import models(kyuki isme hum data base se interaction karenge data lene ke liye)
+step 2: define route handler(isme hum jovi krna chahte hai us particular route pe  wo define karenge)
+         exports.NAME=async(req,res)=>{
+                    try{
+                    }catch(){
+                         }
+         }
+     step 2.1:  kuch important point: database se kaise interaction karenge:
+               await MyModel.find({}); (yahan await ka kaaam hai jab tak database se data nai le ata tab tak wait karega)
+               ******kuch funtion jo use krte hai*****
+               Mongoose models provide several static helper functions for CRUD operations. Each of these functions returns a mongoose Query object.
+              Model.deleteMany()
+              Model.deleteOne()
+              Model.find()
+              Model.findById()
+              Model.findByIdAndDelete()
+              Model.findByIdAndRemove()
+              Model.findByIdAndUpdate()
+              Model.findOne()
+              Model.findOneAndDelete()
+              Model.findOneAndRemove()
+              Model.findOneAndReplace()
+              Model.findOneAndUpdate()
+              Model.replaceOne()
+              Model.updateMany()
+              Model.updateOne()
+              
+ step 3: database se data ane ke baad isko .json ke help se JSON format me data bhej diya jata hai
+          res.status(200)    //isme res.status(200) ye batata hai ke successfully data a chuka hai
+                .json({
+                        success:true,
+                        data:todos,
+                        message:"Entire data is fetched",
+                }) 
+                
+         agar data successufully nai ata hai : agar koi error ata hai to usko 
+         res.status(500)   //isme res.status(500) ye batata hai ke error aya hai 
+                .json({
+                        success:false,
+                        error:err.message,
+                        message:"server Error"
+                })
+                
+                
+ code:
+ 
+ //import the model
+const Todo=require("../models/Todo");
+
+//define route handler
+exports.getTodo=async(req,res)=>{
+        try{
+                // fetch all todo item from database
+                const todos=await Todo.find({});
+
+                // response
+                res.status(200)
+                .json({
+                        success:true,
+                        data:todos,
+                        message:"Entire data is fetched",
+                })
+              
+        }
+        catch(err){
+                console.error(err);
+                res.status(500)
+                .json({
+                        success:false,
+                        error:err.message,
+                        message:"server Error"
+                })
+               
+        }
+}
+             
+ 
+
+               
+
+
+---------------------------------------------------------------------------------------------------------------------------------End-------------
 
 
 
