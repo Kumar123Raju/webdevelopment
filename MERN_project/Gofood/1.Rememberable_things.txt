@@ -24,3 +24,12 @@ rfc ->when we declare components
    
  3rd lecture:
                         1.React Router DOM
+
+
+
+
+
+10th lecture:
+                   topic:
+                         1.context in react(ek changes karna hai jo kisi ka child ke child me hoga......normal method se time lagega aur waste v hai)
+                         2.use reducer
