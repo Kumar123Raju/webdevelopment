@@ -36,7 +36,7 @@ export default App;
 
 
 
-*use of Hooks with Array********************************************
+***********************************use of Hooks with Array********************************************
 (ye bahut he awsom hai ke array ke sath easy use kr skte hai ..array same to same Json ke tarh he hai )
 code:
 
@@ -69,4 +69,30 @@ export default function UseStateArray() {
     </div>
   );
 }
+
+*****************************************************use of object and spread operator******************************************
+(jab hamare pass 3,4 value hai aur sirf ek value ko change krna hai baaki ko same rakhna hai tab hum spread opearton ka use krte hai object me )
+code:
+    import React, {useState } from 'react'
+
+export default function UseStateObject() {
+        let obj={
+                Name:"Raju",
+                Age:"25",
+                course:"MCA"
+        }
+      const [myObject,setMyObject]=useState(obj);
+      const update= ()=>{
+        setMyObject({...myObject,Name:"mahi",Age:24})
+      }
+        
+  return (
+    <div>
+        <h1>Name:{myObject.Name}  Age:{myObject.Age}  course:{myObject.course}</h1>
+        <button onClick={update}> Update</button>
+      
+    </div>
+  )
+}
+
     
