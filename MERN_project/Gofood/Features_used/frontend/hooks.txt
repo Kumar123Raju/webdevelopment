@@ -27,3 +27,46 @@ function App() {
 }
 
 export default App;
+
+
+*Rule for Hooks:
+1.don't call Hooks inside loop,condition  or nested function
+  ex: if(true){
+         const [state,setState]=useState("myname")   //its not allowed
+
+
+
+*use of Hooks with Array********************************************
+(ye bahut he awsom hai ke array ke sath easy use kr skte hai ..array same to same Json ke tarh he hai )
+code:
+
+  import React, { useState } from "react";
+
+export default function UseStateArray() {
+  var biodata = [
+    {
+      id: 0,
+      name: "Raju",
+    },
+    {
+      id: 1,
+      name: "mahi",
+    },
+  ];
+  const [myArray, setMyArray] = useState(biodata);    //useState ke andar jovi pass  karenge MyArray ke help se usko use kr skte hai (aur setMyArray function ke tarah kaam 
+                                                        karta hai) 
+  console.log(biodata);
+  const clearArray = () => {
+    setMyArray([]);   //isme empty array ja raha hai to ab myArray empty array ko refelect krega
+  };
+
+  return (
+    <div>
+      {myArray.map((current) => {
+        return <h1> Name: {current.name}</h1>;
+      })}
+      <button onC lick={clearArray}>Clear</button>
+    </div>
+  );
+}
+    
