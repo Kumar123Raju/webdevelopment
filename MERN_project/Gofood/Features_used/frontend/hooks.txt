@@ -1,0 +1,29 @@
+In simple terms, hooks in React are special functions that help functional components do more powerful things.
+They let you manage information (state) inside a component, do tasks like fetching data from a server (side effects),
+and handle the different stages of a component's life. Hooks make it easier to write clean and reusable code in functional components.
+(in simple language me koi v chiz ko dynamically  krne ka ek tarika hai jaise ke ek example leta hu isme hum jab v button click kareng to use state ke help se
+  hum change kar skte hai agar use state ke help se na krke hum normal javascript se karenge to react me ye kaam nai krareg)
+
+
+code:
+import logo from './logo.svg';
+import React,{useState} from 'react';
+import './App.css';
+
+function App() {
+  const [state,setState]=useState("NO button");
+  
+  
+  return (
+    <div className="App">
+     {/* <a className="btn btn-primary" href="/" role="button">Link</a> */}
+     <h className="heading">You clicked {state}</h><br></br>
+    <button className="btn btn-primary" type="submit" onClick={()=>{setState("button1")}}>Button</button>
+    <button className="btn btn-primary" type="submit" onClick={()=>{setState("button2")}}>Button</button>
+    <button className="btn btn-primary" type="submit" onClick={()=>{setState("button3")}}>Button</button>
+    <button className="btn btn-primary" type="submit" onClick={()=>{setState("button4 ")}}>Button</button>
+    </div>
+  );
+}
+
+export default App;
