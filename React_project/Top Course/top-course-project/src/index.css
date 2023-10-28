@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.spinner {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: conic-gradient(#0000 10%, #22223b);
+    -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
+    animation: spinner-zp9dbg 1s infinite linear;
+}
+
+@keyframes spinner-zp9dbg {
+   
+    to {
+        transform: rotate(1turn);
+    }
+
+}
+*{
+   margin: 0px;
+   padding: 0px;
+
+}
+
+.card{
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #818181;   
+}
+
+.cards-list{
+    border:2px solid black;
+    display: grid;
+    justify-content: center;
+    align-content: start;
+    grid-template-columns: repeat(5, 1fr); /* 3 cards per row, adjust as needed */
+    gap: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    /* --------------- */
+    
+    background-color: rgb(24, 23, 23);
+    height:max-content;
+    
+}
+.Navbar {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center; 
+    align-items: center; /* Center vertically */
+    height: 100px; /* Set an appropriate height for the navbar */
+    background-color: #464158;
+    
+}
+
+
+.Navbar h1{
+    align-items: center;
+    text-shadow: #22223b;
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+ 
+}
+.filter{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center; 
+    align-items: center; /* Center vertically */
+    height: 100px; /* Set an appropriate height for the navbar */
+    background-color: #121312;
+    flex-wrap: wrap;
+    
+  
+}
+.filter-btn {
+    margin: 20px;
+    padding: 10px 20px;
+    border: 2px solid #3498db;
+    background-color: #404649;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    font-weight: 700;
+    background-color: #464158;
+}
+
+.filter-btn:hover {
+    background-color: #2980b9;
+    color: #fff;
+    transform: scale(1.05); /* Button scaling on hover */
+}
+.like-btn{
+    margin-left: 250px;
+    border: 1px solid rgb(241, 238, 238);
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.title{
+    font-size: 25px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+/* .cards-list{
+    height: 100vh;
+} */
